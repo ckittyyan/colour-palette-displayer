@@ -30,11 +30,22 @@ componentDidMount() {
 }
 
 render() {
+  const {photos} = this.state;
   return (
-    <section className="app">
+    <div className="photo-container">
       <p>Images List</p>
-      <PhotoContainer photos={this.state.photos} />
-    </section>
+      {photos.map(photo=> (
+        <div key={photo.id} className="photo-item">
+          <img src ={photo.url} alt={photo.title} />
+          <div className="photo-title">{photo.title} </div>
+          </div>
+          
+      ))}
+      
+      
+      // <PhotoContainer photos={this.state.photos} />
+      
+    </div>
   );
 }
 }

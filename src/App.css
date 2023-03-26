@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.photo-container{
+  display: flex;
+  flex-direction: row;
+  /* overflow: auto; */
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  height:620px;
+}
+
+.photo-cotainer-scroll{
+  display:inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
