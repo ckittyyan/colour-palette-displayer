@@ -1,3 +1,7 @@
+React documentation
+===================
+https://react.dev/
+
 index.css
 ========
 https://www.w3schools.com/cssref/pr_background-color.php
@@ -32,7 +36,37 @@ Caching
 -------
 https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
 https://blog.logrocket.com/using-localstorage-react-hooks/
+https://www.reddit.com/r/reactnative/comments/zepaa9/how_do_you_guys_handle_image_caching/
+https://stackoverflow.com/questions/42980613/how-do-i-implement-caching-in-redux
+https://techblog.geekyants.com/cache-busting-in-react-a-tutorial
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
+https://www.toptal.com/react-hooks/stale-while-revalidate
+https://www.positronx.io/react-get-and-cache-data-with-custom-hook-tutorial/
+https://stackoverflow.com/questions/66968631/how-can-i-cache-data-that-i-already-requested-and-access-it-from-the-store-using
+https://redux-toolkit.js.org/rtk-query/usage/queries
+https://www.apollographql.com/docs/react/caching/cache-interaction/
+https://www.sitepoint.com/client-side-storage-options-comparison/
+https://levelup.gitconnected.com/using-the-indexeddb-api-with-react-and-hooks-4e63d83a5d1b
+
+--> LocalStorage
+https://blog.logrocket.com/using-localstorage-react-hooks/
+https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
+https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
+https://www.robinwieruch.de/local-storage-react/
+
+-->localForage
+https://localforage.github.io/localForage/
+https://www.npmjs.com/package/localforage
 
 Loading
 -------
 https://stackoverflow.com/questions/62620816/how-to-set-a-loading-state-for-react-component-while-sorting-and-filtering-data
+https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
+
+Shuffle
+-------
+https://react.school/ui/button
+https://flaviocopes.com/react-show-different-component-on-click/
+https://stackoverflow.com/questions/70616094/react-calling-function-from-another-function-does-not-work
+https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
+https://upmostly.com/tutorials/calling-a-react-component-on-button-click
