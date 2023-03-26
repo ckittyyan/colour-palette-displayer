@@ -1,8 +1,7 @@
 import './App.css';
 import {PhotoContainer} from "./PhotoContainer"
 import { useState, useEffect, Component } from 'react';
-import { Photo } from './Photo';
-
+import localforage from "localforage";
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
 // https://www.linkedin.com/learning/react-js-essential-training-14836121/
 // https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
@@ -64,13 +63,44 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
-    fetch("http://jsonplaceholder.typicode.com/photos?albumId=1")
-    .then((response) => response.json())
-    .then(setPhotos)
-    .then(() => setLoading(false))
-    .catch(setError);
+    const getPhotos = async () => {
+      setLoading(true);
+      try {
+        const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
+        const photoCache = await localforage.getItem(urlToFetch);
+      
+        if (photoCache) {
+          console.log("here");
+          setPhotos(photoCache);
+          console.log(photoCache);
+          setLoading(false);
+        } else {
+          // if photoCache is empty
+          console.log("ghere");
+          const response = await fetch(urlToFetch);
+          const photos = await response.json();
+          await localforage.setItem(urlToFetch, photos);
+          setPhotos(photos);
+          setLoading(false);
+
+        //   fetch(urlToFetch)
+        // .then((response) => response.json())
+        // .then((data) => {
+        //   localforage.setItem(urlToFetch, data);
+        //   setPhotos(data);
+        // })
+        // .then(() => setLoading(false))
+        // .catch(setError);
+        }
+    } catch (err) {
+      setError(err.message);
+      setLoading(false);
+    }
+
+    }
+    getPhotos();
   }, []);
+    
 
   if (loading) return <h1>Loading images...</h1>
   if (error) return <div>Uh Oh... an error occurred: {error.message}</div>

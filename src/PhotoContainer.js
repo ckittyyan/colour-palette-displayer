@@ -4,15 +4,13 @@ export const PhotoContainer = (props) => {
 
     const displayPhotos = () => {
         return props.photos.map(photo => {
-            return <Photo key={photo.id} url={photo.url} alt={photo.title} />;
+            return <Photo url={photo.url} key={photo.id} />
         });
     };
     return (
         <>
         <div className="photo-container">
-
         {displayPhotos()}
-        
         </div>
         </>
     )
