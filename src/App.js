@@ -1,4 +1,5 @@
 import './App.css';
+import {PhotoContainer} from "./PhotoContainer"
 import { useState, useEffect, Component } from 'react';
 
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
@@ -12,7 +13,7 @@ class App extends Component {
   }
 
 componentDidMount() {
-  fetch("http://jsonplaceholder.typicode.com/photos")
+  fetch("http://jsonplaceholder.typicode.com/photos?albumId=1")
   .then(response => {
     //console.log("response", response);
     if (!response.ok) {
@@ -31,7 +32,8 @@ componentDidMount() {
 render() {
   return (
     <section className="app">
-      <p>Is this working</p>
+      <p>Images List</p>
+      <PhotoContainer photos={this.state.photos} />
     </section>
   );
 }
