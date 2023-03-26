@@ -1,11 +1,13 @@
-export const Shuffler = (props) => {
+export const Shuffler = ({photos, setPhotos}) => {
 
     const shuffle = () => {
         
-      console.log(props.array.length);
-      const newlist = shuffling(props.array);
+      console.log("i'm in shuffle");
+      console.log(photos.length);
+      const newlist = shuffling(photos);
       console.log(newlist);
-      return;
+      console.log("left shuffling");
+      setPhotos(newlist);
     };
 
     const shuffling = (array) => {
@@ -13,12 +15,9 @@ export const Shuffler = (props) => {
             return array;
         }
 
-        const randomIndex = Math.random() * array.length;
-        console.log(randomIndex);
-        console.log(Math.floor(randomIndex));
+        const randomIndex = Math.floor(Math.random() * array.length);
         const photoAtRandomIndex = array[randomIndex];
         const firstArrayHalf = array.splice(0, randomIndex);
-        console.log(firstArrayHalf);
         const secondArrayHalf = array.splice(1);
         const newArray = [...firstArrayHalf, ...secondArrayHalf];
 
