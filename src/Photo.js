@@ -1,7 +1,10 @@
 export const Photo = (props) => {
     return (
-        <section>
+        <div key={props.id} className="photo-item">
+            
             <img src={props.url} alt={props.title} />
-        </section>
+            <div className="photo-title"> {props.alt} </div>
+            
+        </div>
     )
 }
