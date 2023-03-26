@@ -1,6 +1,6 @@
 import './App.css';
-import {PhotoContainer} from "./PhotoContainer"
-import { useState, useEffect, Component } from 'react';
+import {PhotoContainer} from "./components/PhotoContainer"
+import { useState, useEffect } from 'react';
 import localforage from "localforage";
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
 // https://www.linkedin.com/learning/react-js-essential-training-14836121/
@@ -107,7 +107,11 @@ function App() {
   if (!photos) return null;
 
   return (
-    <PhotoContainer photos={photos}/>
+    <div>
+    <PhotoContainer photos={photos}></PhotoContainer>
+    
+    {/* <button>hello</button> */}
+    </div>
   )
 
 }
