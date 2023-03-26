@@ -43,11 +43,6 @@ function App() {
     getPhotos();
   }, []);
 
-  
-  // function handleShuffle() {
-  //     const newPhotosOrder = Shuffler(photos);
-  //     setPhotos(pnewPhotosOrder);
-  // }
 
   if (loading) return <h1>Loading images...</h1>
   if (error) return <div>Uh Oh... an error occurred: {error.message}</div>
