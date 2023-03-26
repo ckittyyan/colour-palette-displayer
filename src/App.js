@@ -12,11 +12,15 @@ function App() {
   const [photos, setPhotos] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [colour, setColour] = useState("");
 
   useEffect(() => {
     const getPhotos = async () => {
       setLoading(true);
       try {
+        // code referenced from https://stackoverflow.com/a/1152054
+        const randomColour = "#" + Math.floor(Math.random() * 16777216).toString(16).substring(-6);
+        setColour(randomColour);
         const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
         const photoCache = await localforage.getItem(urlToFetch);
       
@@ -43,18 +47,15 @@ function App() {
     getPhotos();
   }, []);
 
-
   if (loading) return <h1>Loading images...</h1>
   if (error) return <div>Uh Oh... an error occurred: {error.message}</div>
   if (!photos) return null;
 
   return (
-    <div>
+    <div className="app-container">
+      <h1 className="title-header" style={{color: colour}}>Colour Palette Display</h1>
     <PhotoContainer photos={photos}></PhotoContainer>
-    {/* <button onClick={handleShuffle}>Shuffle</button> */}
     <Shuffler photos={photos} setPhotos={setPhotos}></Shuffler>
-    
-    {/* <button>hello</button> */}
     </div>
   )
 

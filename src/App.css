@@ -25,11 +25,27 @@
   color: white;
 }
 
+.title-header {
+  background-color: #282c3400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  /* color: rgb(92, 82, 236); */
+  font-size: 5vh;
+  text-shadow: 1px 1px #FFFFFF,
+              -1px -1px #FFFFFF,
+              -1px 1px #FFFFFF,
+              1px -1px #FFFFFF;
+}
+
 
 /* code referenced from https://blog.hubspot.com/website/horizontal-scrolling
 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
 .photo-container{
   display: flex;
+  /* min-height: 50vh; */
   /* align-items: center; */
   flex-direction: row;
   /* overflow: auto; */
@@ -42,6 +58,9 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   /* border: 20px; */
   gap: 10px;
   scrollbar-width: auto;
+  padding-bottom:100px;
+  max-height:50vh;
+  width:auto;
 }
 
 .photo-item{
@@ -55,16 +74,28 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   position: relative;
   border-color: rgb(252, 252, 252);
   border-style: solid;
-
+  /* display: inline-block; */
+  /* max-height:50vh; */
+  width:50vh;
+  height:50vh;
+  
+  
   
 }
 
 .photo-item img{
-  /* display: block; */
+  display: block;
   /* line-height:0; */
   /* vertical-align: text-bottom; */
   /* width: 100%; */
   border-radius: 5px;
+  /* max-width:50vh;
+  height:auto; */
+  /* max-height:50vh;
+  width:auto; */
+  width:50vh;
+  height:50vh;
+  
 }
 
 .photo-title{
@@ -75,19 +106,25 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   position: absolute;
   top: 50%;
   width: 100%;
+  right: 5%;
   /* display: inline-block; */
   text-shadow: 1px 1px #FFFFFF,
               -1px -1px #FFFFFF,
               -1px 1px #FFFFFF,
               1px -1px #FFFFFF;
   opacity: 80%;
- 
+  /* font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))); */
+  font-size: 1.5vmin;
+  /* height:100%; */
+  line-height:-1;
+  
 }
 
 .shuffle-button{
   display:flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .shuffle-button button{
