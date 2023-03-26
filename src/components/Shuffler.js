@@ -1,12 +1,7 @@
 export const Shuffler = ({photos, setPhotos}) => {
 
     const shuffle = () => {
-        
-      console.log("i'm in shuffle");
-      console.log(photos.length);
       const newlist = shuffling(photos);
-      console.log(newlist);
-      console.log("left shuffling");
       setPhotos(newlist);
     };
 
@@ -23,19 +18,11 @@ export const Shuffler = ({photos, setPhotos}) => {
 
         return [photoAtRandomIndex, ...shuffling(newArray)];
 
-
-        // if (array.length <= 1) {
-        //     return array;
-        // }
-
-        // randomIndex = Math.floor(Math.random() * length);
-        // length--;
-
-        // [array[]]
-
     }
     
     return (
-        <button onClick={shuffle}>hello</button>
+        <div className="shuffle-button">
+            <button onClick={shuffle}>Shuffle</button>
+        </div>
     )
 }
