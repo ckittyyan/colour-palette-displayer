@@ -25,9 +25,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 /* code referenced from https://blog.hubspot.com/website/horizontal-scrolling
 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
@@ -81,11 +78,4 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

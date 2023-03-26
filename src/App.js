@@ -1,6 +1,6 @@
 import './App.css';
 import {PhotoContainer} from "./PhotoContainer"
-import { useState, useEffect, Component } from 'react';
+import { Component } from 'react';
 
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
 // https://www.linkedin.com/learning/react-js-essential-training-14836121/
@@ -11,7 +11,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      photos: []
+      photos: [],
+      loading: true,
+      hasError: false
     };
   }
 
@@ -20,34 +22,37 @@ componentDidMount() {
   .then(response => {
     //console.log("response", response);
     if (!response.ok) {
-      throw Error("error grabbing images");
+      this.setState( {hasError: true})
+      throw new Error("There was an error grabbing images");
     }
     return response.json()
     .then(allData => {
-      this.setState( { photos: allData });
+      this.setState( { photos: allData,
+      loading: false });
     })
-    .catch(err => {
-      throw Error(err.message);
+    .catch((err) => {
+      this.setState( {hasError: true})
+      throw new Error(err.message);
     });
   })
 }
 
 render() {
-  const {photos} = this.state;
+  const {loading, hasError} = this.state;
+  if (hasError) {
+    return <p>Uh oh... an error has occurred! </p>
+  }
   return (
-    // <div className="photo-container">
     <div>
-      {/* {photos.map(photo=> (
-        <div key={photo.id} className="photo-item">
-          <img src={photo.url} alt={photo.title} />
-          <div className="photo-title">{photo.title} </div>
-          </div>
-      ))} */}
-      
-      
+    { loading ? (
+      <div> Loading images... </div>
+    ) : (
+    
       <PhotoContainer photos={this.state.photos} />
       
-    </div>
+    
+  )}
+  </div>
   );
 }
 }

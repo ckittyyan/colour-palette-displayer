@@ -10,8 +10,27 @@ https://stackoverflow.com/questions/7774814/remove-white-space-below-image
 https://css-tricks.com/almanac/properties/b/box-shadow/
 https://linuxhint.com/add-space-between-images-css/
 https://www.w3schools.com/css/css_border.asp
+https://stackoverflow.com/questions/34667466/how-to-center-this-horizontal-list-of-images
+https://stackoverflow.com/questions/74048456/position-a-diagonal-title-in-the-center-of-the-page
 
 Title
 --------
 https://www.w3schools.com/howto/howto_css_image_text.asp
 https://stackoverflow.com/a/1829630 (making photo-item relative for absolute position to work)
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+App.js
+======
+General
+-------
+https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
+https://www.linkedin.com/learning/react-js-essential-training-14836121/
+https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
+https://stackoverflow.com/questions/39019094/reactjs-get-json-object-data-from-an-url
+
+Caching
+-------
+
+Loading
+-------
+https://stackoverflow.com/questions/62620816/how-to-set-a-loading-state-for-react-component-while-sorting-and-filtering-data
