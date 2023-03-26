@@ -9,7 +9,9 @@ export const PhotoContainer = (props) => {
     };
     return (
         <>
-        <section>{displayPhotos()}</section>
+        <div className="photo-container">
+        {displayPhotos()}
+        </div>
         </>
     )
 }

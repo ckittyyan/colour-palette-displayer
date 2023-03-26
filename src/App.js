@@ -3,6 +3,9 @@ import {PhotoContainer} from "./PhotoContainer"
 import { useState, useEffect, Component } from 'react';
 
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
+// https://www.linkedin.com/learning/react-js-essential-training-14836121/
+// https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
+// https://stackoverflow.com/questions/39019094/reactjs-get-json-object-data-from-an-url
 
 class App extends Component {
   constructor() {
@@ -32,18 +35,17 @@ componentDidMount() {
 render() {
   const {photos} = this.state;
   return (
-    <div className="photo-container">
-      <p>Images List</p>
-      {photos.map(photo=> (
+    // <div className="photo-container">
+    <div>
+      {/* {photos.map(photo=> (
         <div key={photo.id} className="photo-item">
-          <img src ={photo.url} alt={photo.title} />
+          <img src={photo.url} alt={photo.title} />
           <div className="photo-title">{photo.title} </div>
           </div>
-          
-      ))}
+      ))} */}
       
       
-      // <PhotoContainer photos={this.state.photos} />
+      <PhotoContainer photos={this.state.photos} />
       
     </div>
   );

@@ -28,6 +28,8 @@
   color: #61dafb;
 }
 
+/* code referenced from https://blog.hubspot.com/website/horizontal-scrolling
+https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
 .photo-container{
   display: flex;
   flex-direction: row;
@@ -36,15 +38,25 @@
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 20px;
-  height:620px;
+  height: 620px;
+  border: 20px;
 }
 
-.photo-cotainer-scroll{
-  display:inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+.photo-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.photo-title{
+  display:flex;
+  justify-content:center;
+  transform: rotate(-45deg);
+  text-align:center;
+ 
 }
 
 @keyframes App-logo-spin {
