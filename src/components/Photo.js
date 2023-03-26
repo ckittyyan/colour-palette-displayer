@@ -5,10 +5,10 @@ export const Photo = (props) => {
             
             
            
-            <img src={props.url} alt={props.title} />
+            <img src={props.url} alt={props.title} loading="lazy"/>
             <div className="photo-title"> {props.title} </div>
-            <div>ID: {props.id}</div>
-            <div>title: {props.title}</div>
+            {/* <div>ID: {props.id}</div>
+            <div>title: {props.title}</div> */}
            
             
         </div>

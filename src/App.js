@@ -21,7 +21,8 @@ function App() {
         // code referenced from https://stackoverflow.com/a/1152054
         const randomColour = "#" + Math.floor(Math.random() * 16777216).toString(16).substring(-6);
         setColour(randomColour);
-        const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
+        // const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
+        const urlToFetch = "http://jsonplaceholder.typicode.com/photos";
         const photoCache = await localforage.getItem(urlToFetch);
       
         if (photoCache) {
