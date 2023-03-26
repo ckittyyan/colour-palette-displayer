@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect, Component } from 'react';
 
-function App() {
+// code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      photos: []
+    };
+  }
+
+componentDidMount() {
+  fetch("http://jsonplaceholder.typicode.com/photos")
+  .then(response => {
+    //console.log("response", response);
+    if (!response.ok) {
+      throw Error("error grabbing images");
+    }
+    return response.json()
+    .then(allData => {
+      this.setState( { photos: allData });
+    })
+    .catch(err => {
+      throw Error(err.message);
+    });
+  })
+}
+
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="app">
+      <p>Is this working</p>
+    </section>
   );
+}
 }
 
 export default App;
