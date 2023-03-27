@@ -1,118 +1,118 @@
 React documentation
 ===================
-https://react.dev/
+- https://react.dev/
 
 index.css
 ========
-https://www.w3schools.com/cssref/pr_background-color.php
+- https://www.w3schools.com/cssref/pr_background-color.php
 
 App.css
 ========
 Image
 --------
-https://stackoverflow.com/questions/7774814/remove-white-space-below-image
-https://css-tricks.com/almanac/properties/b/box-shadow/
-https://linuxhint.com/add-space-between-images-css/
-https://www.w3schools.com/css/css_border.asp
-https://stackoverflow.com/questions/34667466/how-to-center-this-horizontal-list-of-images
-https://stackoverflow.com/questions/74048456/position-a-diagonal-title-in-the-center-of-the-page
-https://stackoverflow.com/questions/7055393/center-image-using-text-align-center
-https://stackoverflow.com/questions/10119955/side-scrolling-images-with-captions
-https://stackoverflow.com/questions/418218/how-can-i-fix-the-css-on-my-website-so-large-images-dont-overflow-their-contain
+- https://stackoverflow.com/questions/7774814/remove-white-space-below-image
+- https://css-tricks.com/almanac/properties/b/box-shadow/
+- https://linuxhint.com/add-space-between-images-css/
+- https://www.w3schools.com/css/css_border.asp
+- https://stackoverflow.com/questions/34667466/how-to-center-this-horizontal-list-of-images
+- https://stackoverflow.com/questions/74048456/position-a-diagonal-title-in-the-center-of-the-page
+- https://stackoverflow.com/questions/7055393/center-image-using-text-align-center
+- https://stackoverflow.com/questions/10119955/side-scrolling-images-with-captions
+- https://stackoverflow.com/questions/418218/how-can-i-fix-the-css-on-my-website-so-large-images-dont-overflow-their-contain
 
 Title
 --------
-https://www.w3schools.com/howto/howto_css_image_text.asp
-https://stackoverflow.com/a/1829630 (making photo-item relative for absolute position to work)
-https://developer.mozilla.org/en-US/docs/Web/CSS/position
-https://stackoverflow.com/questions/1152024/best-way-to-generate-a-random-color-in-javascript
-https://www.geeksforgeeks.org/how-to-generate-random-colors-by-using-react-hooks/
-https://stackoverflow.com/questions/48960129/how-to-shrink-text-dynamically-to-fit-in-the-container **
-https://github.com/datchley/react-scale-text
-https://www.npmjs.com/package/react-scale-text
-https://stackabuse.com/resizing-images-with-react/
-https://stackoverflow.com/questions/3380252/how-to-create-proportional-image-height-width
-https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
-https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
-https://stackoverflow.com/questions/34570944/css-stretch-content-container-height-if-empty-overflow-if-too-big
-https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters
-https://stackoverflow.com/questions/15649244/responsive-font-size-in-css
-https://stackoverflow.com/questions/4919076/outline-effect-to-text
-https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+- https://www.w3schools.com/howto/howto_css_image_text.asp
+- https://stackoverflow.com/a/1829630 (making photo-item relative for absolute position to work)
+- https://developer.mozilla.org/en-US/docs/Web/CSS/position
+- https://stackoverflow.com/questions/1152024/best-way-to-generate-a-random-color-in-javascript
+- https://www.geeksforgeeks.org/how-to-generate-random-colors-by-using-react-hooks/
+- https://stackoverflow.com/questions/48960129/how-to-shrink-text-dynamically-to-fit-in-the-container **
+- https://github.com/datchley/react-scale-text
+- https://www.npmjs.com/package/react-scale-text
+- https://stackabuse.com/resizing-images-with-react/
+- https://stackoverflow.com/questions/3380252/how-to-create-proportional-image-height-width
+- https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
+- https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
+- https://stackoverflow.com/questions/34570944/css-stretch-content-container-height-if-empty-overflow-if-too-big
+- https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters
+- https://stackoverflow.com/questions/15649244/responsive-font-size-in-css
+- https://stackoverflow.com/questions/4919076/outline-effect-to-text
+- https://www.w3schools.com/cssref/css3_pr_text-shadow.php
 
 App.js
 ======
 General/Fetching
 -------
-https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
-https://www.linkedin.com/learning/react-js-essential-training-14836121/
-https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
-https://stackoverflow.com/questions/39019094/reactjs-get-json-object-data-from-an-url
-https://www.c-sharpcorner.com/article/how-to-fetch-api-call-using-json-server-in-reactjs/
-http://jsonplaceholder.typicode.com/guide/
-https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
-https://legacy.reactjs.org/docs/lists-and-keys.html
+- https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
+- https://www.linkedin.com/learning/react-js-essential-training-14836121/
+- https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
+- https://stackoverflow.com/questions/39019094/reactjs-get-json-object-data-from-an-url
+- https://www.c-sharpcorner.com/article/how-to-fetch-api-call-using-json-server-in-reactjs/
+- http://jsonplaceholder.typicode.com/guide/
+- https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
+- https://legacy.reactjs.org/docs/lists-and-keys.html
 
 Caching
 -------
-https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
-https://blog.logrocket.com/using-localstorage-react-hooks/
-https://www.reddit.com/r/reactnative/comments/zepaa9/how_do_you_guys_handle_image_caching/
-https://stackoverflow.com/questions/42980613/how-do-i-implement-caching-in-redux
-https://techblog.geekyants.com/cache-busting-in-react-a-tutorial
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
-https://www.toptal.com/react-hooks/stale-while-revalidate
-https://www.positronx.io/react-get-and-cache-data-with-custom-hook-tutorial/
-https://stackoverflow.com/questions/66968631/how-can-i-cache-data-that-i-already-requested-and-access-it-from-the-store-using
-https://redux-toolkit.js.org/rtk-query/usage/queries
-https://www.apollographql.com/docs/react/caching/cache-interaction/
-https://www.sitepoint.com/client-side-storage-options-comparison/
-https://levelup.gitconnected.com/using-the-indexeddb-api-with-react-and-hooks-4e63d83a5d1b
+- https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
+- https://blog.logrocket.com/using-localstorage-react-hooks/
+- https://www.reddit.com/r/reactnative/comments/zepaa9/how_do_you_guys_handle_image_caching/
+- https://stackoverflow.com/questions/42980613/how-do-i-implement-caching-in-redux
+- https://techblog.geekyants.com/cache-busting-in-react-a-tutorial
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
+- https://www.toptal.com/react-hooks/stale-while-revalidate
+- https://www.positronx.io/react-get-and-cache-data-with-custom-hook-tutorial/
+- https://stackoverflow.com/questions/66968631/how-can-i-cache-data-that-i-already-requested-and-access-it-from-the-store-using
+- https://redux-toolkit.js.org/rtk-query/usage/queries
+- https://www.apollographql.com/docs/react/caching/cache-interaction/
+- https://www.sitepoint.com/client-side-storage-options-comparison/
+- https://levelup.gitconnected.com/using-the-indexeddb-api-with-react-and-hooks-4e63d83a5d1b
 
---> LocalStorage
-https://blog.logrocket.com/using-localstorage-react-hooks/
-https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
-https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
-https://www.robinwieruch.de/local-storage-react/
+### LocalStorage
+- https://blog.logrocket.com/using-localstorage-react-hooks/
+- https://stackoverflow.com/questions/49574285/how-to-cache-fetched-data-in-react-without-redux
+- https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
+- https://www.robinwieruch.de/local-storage-react/
 
--->localForage
-https://localforage.github.io/localForage/
-https://www.npmjs.com/package/localforage
+### localForage
+- https://localforage.github.io/localForage/
+- https://www.npmjs.com/package/localforage
 
 Loading
 -------
-https://stackoverflow.com/questions/62620816/how-to-set-a-loading-state-for-react-component-while-sorting-and-filtering-data
-https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
-https://blog.logrocket.com/progressive-image-loading-react-tutorial/
-https://www.freecodecamp.org/news/how-to-lazy-load-images-in-react/
+- https://stackoverflow.com/questions/62620816/how-to-set-a-loading-state-for-react-component-while-sorting-and-filtering-data
+- https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
+- https://blog.logrocket.com/progressive-image-loading-react-tutorial/
+- https://www.freecodecamp.org/news/how-to-lazy-load-images-in-react/
 
 Shuffle
 -------
-https://react.school/ui/button
-https://flaviocopes.com/react-show-different-component-on-click/
-https://stackoverflow.com/questions/70616094/react-calling-function-from-another-function-does-not-work
-https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
-https://upmostly.com/tutorials/calling-a-react-component-on-button-click
-https://stackoverflow.com/questions/45540393/react-too-much-recursion
-https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-https://stackoverflow.com/questions/66847169/issue-implementing-a-recursive-shuffle-array-method-in-nlogn-time
-https://www.geeksforgeeks.org/shuffle-2n-integers-as-a1-b1-a2-b2-a3-b3-bn-without-using-extra-space-set-2/
-https://stackoverflow.com/questions/63759580/where-should-i-declare-state-variables-using-hooks-in-react-native
-https://stackoverflow.com/questions/56567953/randomly-order-array-recursive-with-java
-https://stackoverflow.com/questions/60731946/how-to-create-an-array-using-recursion-while-specifying-the-min-max-values-in
-https://stackoverflow.com/questions/55607431/how-to-merge-two-array-of-objects-with-reactjs
-https://gomakethings.com/how-to-split-an-array-in-two-or-more-with-vanilla-js/
-https://react.dev/learn/updating-arrays-in-state
+- https://react.school/ui/button
+- https://flaviocopes.com/react-show-different-component-on-click/
+- https://stackoverflow.com/questions/70616094/react-calling-function-from-another-function-does-not-work
+- https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
+- https://upmostly.com/tutorials/calling-a-react-component-on-button-click
+- https://stackoverflow.com/questions/45540393/react-too-much-recursion
+- https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+- https://stackoverflow.com/questions/66847169/issue-implementing-a-recursive-shuffle-array-method-in-nlogn-time
+- https://www.geeksforgeeks.org/shuffle-2n-integers-as-a1-b1-a2-b2-a3-b3-bn-without-using-extra-space-set-2/
+- https://stackoverflow.com/questions/63759580/where-should-i-declare-state-variables-using-hooks-in-react-native
+- https://stackoverflow.com/questions/56567953/randomly-order-array-recursive-with-java
+- https://stackoverflow.com/questions/60731946/how-to-create-an-array-using-recursion-while-specifying-the-min-max-values-in
+- https://stackoverflow.com/questions/55607431/how-to-merge-two-array-of-objects-with-reactjs
+- https://gomakethings.com/how-to-split-an-array-in-two-or-more-with-vanilla-js/
+- https://react.dev/learn/updating-arrays-in-state
 
 Errors
 ------
-https://stackoverflow.com/questions/70735309/react-native-why-doesnt-my-catch-statement-catch-the-error-which-i-get
-https://blog.appsignal.com/2022/06/15/how-to-handle-errors-in-react.html
-https://legacy.reactjs.org/docs/error-boundaries.html
-https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+- https://stackoverflow.com/questions/70735309/react-native-why-doesnt-my-catch-statement-catch-the-error-which-i-get
+- https://blog.appsignal.com/2022/06/15/how-to-handle-errors-in-react.html
+- https://legacy.reactjs.org/docs/error-boundaries.html
+- https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
 
 Github Pages
 ============
-https://github.com/gitname/react-gh-pages
-https://github.com/Frnt-End/Update-React-in-GitHub-Pages
-https://stackoverflow.com/questions/60698563/api-request-from-github-pages-doesnt-work-mixed-block
+- https://github.com/gitname/react-gh-pages
+- https://github.com/Frnt-End/Update-React-in-GitHub-Pages
+- https://stackoverflow.com/questions/60698563/api-request-from-github-pages-doesnt-work-mixed-block

@@ -4,13 +4,11 @@
 
 # Overview
 
-Colour Palette Display is a simple web application that accomplishes the following:
-- fetches JSON data from http://jsonplaceholder.typicode.com/photos
-- a horizontal scrollable list of photos from fetched data with
-    - title of each photo is written diagonally across the photo
-    - each photo is displayed with rounded corners, a border and a subtle drop shadow
-- fetched data is stored onto a cache 
-    - cached with localForage
+Colour Palette Display is a simple web application that features the following:
+- a horizontal scrollable list of photos fetched from http://jsonplaceholder.typicode.com/photos with
+    - the title of each photo written diagonally across the photo
+    - each photo displayed with rounded corners, a thin white border, and a subtle drop shadow
+    - cached with [localForage](https://localforage.github.io/localForage/)
 - a "Shuffle" Button that reorders the list of photos recursively
 - a changing title colour (when the page refreshes)
 

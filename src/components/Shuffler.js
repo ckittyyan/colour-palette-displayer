@@ -1,3 +1,7 @@
+/* 
+Component that shuffles a given list of photos (reorder recursively)
+*/
+
 export const Shuffler = ({photos, setPhotos}) => {
 
     const shuffle = () => {

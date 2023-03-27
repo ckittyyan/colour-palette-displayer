@@ -1,3 +1,7 @@
+/* 
+Component for a photo
+*/
+
 export const Photo = (props) => {
 
     return (
@@ -5,7 +9,6 @@ export const Photo = (props) => {
             
             <img src={props.url} alt={props.title} loading="lazy"/>
             <div className="photo-title"> {props.title} </div>
-           
             
         </div>
     )

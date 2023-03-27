@@ -19,7 +19,7 @@
 
 /* code referenced from https://blog.hubspot.com/website/horizontal-scrolling
 https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
-.photo-container{
+.photo-container {
   display: flex;
   flex-direction: row;
   white-space: nowrap;
@@ -33,7 +33,7 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   width:auto;
 }
 
-.photo-item{
+.photo-item {
   height: 600px;
   box-shadow: 0 5px 15px rgba(24, 5, 5, 0.5);
   border-radius: 10px;
@@ -42,20 +42,16 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   border-style: solid;
   width:50vh;
   height:50vh;
-  
-  
-  
 }
 
-.photo-item img{
+.photo-item img {
   display: block;
   border-radius: 5px;
   width:50vh;
   height:50vh;
-  
 }
 
-.photo-title{
+.photo-title {
   transform: rotate(-45deg);
   text-align:center;
   position: absolute;
@@ -69,17 +65,16 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   opacity: 80%;
   font-size: 1.5vmin;
   line-height:-1;
-  
 }
 
-.shuffle-button{
+.shuffle-button {
   display:flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.shuffle-button button{
+.shuffle-button button {
   align-items: center;
   border: 5px;
   font-size:30px;
@@ -88,7 +83,7 @@ https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
   border-radius: 10px;
 }
 
-.shuffle-button button:hover{
+.shuffle-button button:hover {
   background-color:rgba(158, 147, 154, 0.781);
 }
 

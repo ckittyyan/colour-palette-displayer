@@ -1,5 +1,5 @@
 import './App.css';
-import {PhotoContainer} from "./components/PhotoContainer"
+import { PhotoContainer } from "./components/PhotoContainer"
 import { useState, useEffect } from 'react';
 import localforage from "localforage";
 import { Shuffler } from './components/Shuffler';
@@ -21,25 +21,22 @@ function App() {
         setColour(randomColour);
         const urlToFetch = "https://jsonplaceholder.typicode.com/photos";
         const photoCache = await localforage.getItem(urlToFetch);
-      
+
         if (photoCache) {
-          console.log("here");
           setPhotos(photoCache);
-          console.log(photoCache);
           setLoading(false);
         } else {
           // if photoCache is empty
-          console.log("ghere");
           const response = await fetch(urlToFetch);
           const photos = await response.json();
           await localforage.setItem(urlToFetch, photos);
           setPhotos(photos);
           setLoading(false);
         }
-    } catch (err) {
-      setError(err.message);
-      setLoading(false);
-    }
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
 
     }
     getPhotos();
@@ -51,9 +48,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="title-header" style={{color: colour}}>Colour Palette Display</h1>
-    <PhotoContainer photos={photos}></PhotoContainer>
-    <Shuffler photos={photos} setPhotos={setPhotos}></Shuffler>
+      <h1 className="title-header" style={{ color: colour }}>Colour Palette Display</h1>
+      <PhotoContainer photos={photos}></PhotoContainer>
+      <Shuffler photos={photos} setPhotos={setPhotos}></Shuffler>
     </div>
   )
 
