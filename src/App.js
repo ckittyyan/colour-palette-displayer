@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import localforage from "localforage";
 import { Shuffler } from './components/Shuffler';
 // code referenced from https://medium.com/@yahtzeemoomtaz/fetch-from-an-api-and-display-some-pictures-react-4de2a027eda7
-// https://www.linkedin.com/learning/react-js-essential-training-14836121/
-// https://www.linkedin.com/learning/react-js-building-an-interface-8551484/
 // https://stackoverflow.com/questions/39019094/reactjs-get-json-object-data-from-an-url
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
         // code referenced from https://stackoverflow.com/a/1152054
         const randomColour = "#" + Math.floor(Math.random() * 16777216).toString(16).substring(-6);
         setColour(randomColour);
-        // const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
         const urlToFetch = "https://jsonplaceholder.typicode.com/photos";
         const photoCache = await localforage.getItem(urlToFetch);
       
