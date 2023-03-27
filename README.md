@@ -1,6 +1,6 @@
 # Colour Palette Display
 
-[Demo](https://ckittyyan.github.io/colourPaletteDisplayer/)
+[Demo](https://ckittyyan.github.io/colour-palette-displayer)
 
 # Overview
 
