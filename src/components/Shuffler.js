@@ -26,7 +26,7 @@ export const Shuffler = ({photos, setPhotos}) => {
     
     return (
         <div className="shuffle-button">
-            <button onClick={shuffle}>Shuffle</button>
+            <button onClick={shuffle}>TESTING</button>
         </div>
     )
 }
