@@ -22,7 +22,7 @@ function App() {
         const randomColour = "#" + Math.floor(Math.random() * 16777216).toString(16).substring(-6);
         setColour(randomColour);
         // const urlToFetch = "http://jsonplaceholder.typicode.com/photos?albumId=1";
-        const urlToFetch = "http://jsonplaceholder.typicode.com/photos";
+        const urlToFetch = "https://jsonplaceholder.typicode.com/photos";
         const photoCache = await localforage.getItem(urlToFetch);
       
         if (photoCache) {
