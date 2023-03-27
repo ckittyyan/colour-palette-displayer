@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/colour-palette-displayer/static/css/main.24c4eca2.css",
+    "main.js": "/colour-palette-displayer/static/js/main.227efde9.js",
+    "index.html": "/colour-palette-displayer/index.html",
+    "main.24c4eca2.css.map": "/colour-palette-displayer/static/css/main.24c4eca2.css.map",
+    "main.227efde9.js.map": "/colour-palette-displayer/static/js/main.227efde9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24c4eca2.css",
+    "static/js/main.227efde9.js"
+  ]
+}
